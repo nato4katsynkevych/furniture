@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 
 <head>
 	<meta charset="UTF-8">
@@ -17,313 +17,470 @@
 </head>
 
 <body>
-	<header>
-		<nav class="site-nav">
-			<div class="contacts-nav">
-				<ul class="social-links">Ми в соціальних мережах:
-					<li class="item"> <a href="" aria-label="telegram-icon">
-							<svg class="social-icon" width="20px" height="20px">
-								<use href="./images/sprite.svg#telegram"></use>
-							</svg></a>
-					</li>
-					<li class="item"> <a href="./images/Facebook.svg" aria-label="facebook-icon"><svg
-								class="social-icon" width="20px" height="20px">
-								<use href="./images/sprite.svg#facebook"></use>
-							</svg></a>
-					</li>
-					<li class="item"> <a href="./images/Instagram.svg" aria-label="instagram-icon"><svg
-								class="social-icon" width="20px" height="20px">
-								<use href="./images/sprite.svg#instagram"></use>
-							</svg></a>
-					</li>
-				</ul>
-				<div class="phone">
-					<a href="tel:(099) 111 22 33" class="phone-link">
-						<svg class="phone-icon" width="24px" height="24px">
-							<use href="./images/sprite.svg#smartphone1"></use>
-						</svg>(099) 111 22 33
-						<svg class="chevron-icon" width="24px" height="24px">
-							<use href="./images/sprite.svg#chevron-right"></use>
-						</svg></a>
-				</div>
-
-			</div>
-
-			<ul class="page-nav">
-				<li class="item current"><a href="./index.html" class="">головна</a> </li>
-				<li class="item">акції</li>
-				<li class="item">оплата та доставка</li>
-				<li class="item">про нас</li>
-				<li class="item">контакти</li>
-			</ul>
-		</nav>
-		<div class="filters">
-			<ul class="menu">
-				<li class="item">дивани <svg class="chevron-icon" width="24px" height="24px">
-						<use href="./images/sprite.svg#chevron-right"></use>
-					</svg></li>
-				<li class="item">ліжка <svg class="chevron-icon" width="24px" height="24px">
-						<use href="./images/sprite.svg#chevron-right"></use>
-					</svg></li>
-				<li class="item">крісла <svg class="chevron-icon" width="24px" height="24px">
-						<use href="./images/sprite.svg#chevron-right"></use>
-					</svg></li>
-				<li class="item">комоди <svg class="chevron-icon" width="24px" height="24px">
-						<use href="./images/sprite.svg#chevron-right"></use>
-					</svg></li>
-				<li class="item">шафи <svg class="chevron-icon" width="24px" height="24px">
-						<use href="./images/sprite.svg#chevron-right"></use>
-					</svg></li>
-				<li class="item">кухня <svg class="chevron-icon" width="24px" height="24px">
-						<use href="./images/sprite.svg#chevron-right"></use>
-					</svg></li>
-			</ul>
+	<header class="page-header">
+		<div class="mobile-container">
 			<div class="logo"><svg class="logo-icon" width="125px" height="75px">
 					<use href="./images/sprite.svg#logo"></use>
 				</svg>
 				<h1><span class="accent">F</span>urniture.test
-
 				</h1>
 			</div>
-
-			<div class="buttons">
-				<button class="cart "> <svg class="cart-icon" width="30px" height="30px">
-						<use href="./images/sprite.svg#shopping-cart"></use>
-					</svg>кошик</button>
-				<button class="btn">замовити дзвінок</button>
-			</div>
-
+			<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+				<svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd"
+						d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+						clip-rule="evenodd"></path>
+				</svg>
+			</button>
+			<ul class="page-nav menu">
+				<li class="item link"><a href="./index.html" class="current">головна</a> </li>
+				<li class="item link">акції</li>
+				<li class="item link">оплата та доставка</li>
+				<li class="item link">про нас</li>
+				<li class="item link">контакти</li>
+			</ul>
 		</div>
-
-
-
 	</header>
+	<div class="menu-container js-menu-container" id="mobile-menu">
+		<button class="menu-toggle js-close-menu">
+			<svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+				<path fill-rule="evenodd"
+					d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+					clip-rule="evenodd"></path>
+			</svg>
+		</button>
 
+
+		<ul class="page-nav mobile-menu">
+			<li class="item link"><a href="./index.html" class="current">головна</a> </li>
+			<li class="item link">акції</li>
+			<li class="item link">оплата та доставка</li>
+			<li class="item link">про нас</li>
+			<li class="item link">контакти</li>
+	</div>
+	<nav class="site-nav container ">
+		<div class="contacts-nav ">
+			<ul class="social-links">Ми в соціальних мережах:
+				<li class="item"> <a href="" aria-label="telegram-icon">
+						<svg class="social-icon" width="20px" height="20px">
+							<use href="./images/sprite.svg#telegram"></use>
+						</svg></a>
+				</li>
+				<li class="item"> <a href="./images/Facebook.svg" aria-label="facebook-icon"><svg class="social-icon"
+							width="20px" height="20px">
+							<use href="./images/sprite.svg#facebook"></use>
+						</svg></a>
+				</li>
+				<li class="item"> <a href="./images/Instagram.svg" aria-label="instagram-icon"><svg class="social-icon"
+							width="20px" height="20px">
+							<use href="./images/sprite.svg#instagram"></use>
+						</svg></a>
+				</li>
+			</ul>
+			<div class="phone">
+				<a href="tel:(099) 111 22 33" class="phone-link">
+					<svg class="phone-icon" width="24px" height="24px">
+						<use href="./images/sprite.svg#smartphone1"></use>
+					</svg>(099) 111 22 33
+					<svg class="chevron-icon" width="24px" height="24px">
+						<use href="./images/sprite.svg#chevron-right"></use>
+					</svg></a>
+			</div>
+		</div>
+		<ul class="page-nav ">
+			<li class="item "><a href="./index.html" class="current">головна</a> </li>
+			<li class="item">акції</li>
+			<li class="item">оплата та доставка</li>
+			<li class="item">про нас</li>
+			<li class="item">контакти</li>
+		</ul>
+	</nav>
+	<div class="filters container ">
+		<ul class="filters-menu">
+			<li class="item">дивани <svg class="chevron-icon" width="24px" height="24px">
+					<use href="./images/sprite.svg#chevron-right"></use>
+				</svg></li>
+			<li class="item">ліжка <svg class="chevron-icon" width="24px" height="24px">
+					<use href="./images/sprite.svg#chevron-right"></use>
+				</svg></li>
+			<li class="item">крісла <svg class="chevron-icon" width="24px" height="24px">
+					<use href="./images/sprite.svg#chevron-right"></use>
+				</svg></li>
+			<li class="item">комоди <svg class="chevron-icon" width="24px" height="24px">
+					<use href="./images/sprite.svg#chevron-right"></use>
+				</svg></li>
+			<li class="item">шафи <svg class="chevron-icon" width="24px" height="24px">
+					<use href="./images/sprite.svg#chevron-right"></use>
+				</svg></li>
+			<li class="item">кухня <svg class="chevron-icon" width="24px" height="24px">
+					<use href="./images/sprite.svg#chevron-right"></use>
+				</svg></li>
+		</ul>
+		<div class="logo"><svg class="logo-icon">
+				<use href="./images/sprite.svg#logo"></use>
+			</svg>
+			<h1><span class="accent">F</span>urniture.test
+			</h1>
+		</div>
+		<div class="buttons">
+			<button class="cart "> <svg class="cart-icon" width="30px" height="30px">
+					<use href="./images/sprite.svg#shopping-cart"></use>
+				</svg>кошик</button>
+			<button class="btn">замовити дзвінок</button>
+		</div>
+	</div>
 
 	<div class="hero">
-
-
+		<div class="slider-herro">
+			<div class="herro_item">
+				<div class="SliderBox">
+					<h2 class="NewItem">Новинка</h2>
+					<h3 class="NewItem-item">Ліжко Ornella</h3>
+					<span class="NewItem-item2">Це новий рівень комфортного сну</span>
+					<button class="NewItem-button">Детальніше </button>
+				</div>
+			</div>
+			<div class="herro_item">
+				<div class="SliderBox">
+					<h2 class="NewItem">Новинка</h2>
+					<h3 class="NewItem-item">Ліжко Ornella</h3>
+					<span class="NewItem-item2">Це новий рівень комфортного сну</span>
+					<button class="NewItem-button">Детальніше </button>
+				</div>
+			</div>
+			<div class="herro_item">
+				<div class="SliderBox">
+					<h2 class="NewItem">Новинка</h2>
+					<h3 class="NewItem-item">Ліжко Ornella</h3>
+					<span class="NewItem-item2">Це новий рівень комфортного сну</span>
+					<button class="NewItem-button">Детальніше </button>
+				</div>
+			</div>
+			<div class="herro_item">
+				<div class="SliderBox">
+					<h2 class="NewItem">Новинка</h2>
+					<h3 class="NewItem-item">Ліжко Ornella</h3>
+					<span class="NewItem-item2">Це новий рівень комфортного сну</span>
+					<button class="NewItem-button">Детальніше </button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<main>
-		<section class="advantages">
-			<h2 class="title"> Наші переваги</h2>
-			<ul class="advantages-list">
-				<li class="item"> <img src="./images/advantages1.jpg" alt="furniture" width="586px">
-					<span class="text"> Меблі преміум класу</span>
-				</li>
-				<li class="item"> <img src="./images/advantages2.jpg" alt="reliability" width="586px">
-					<span class="title">Надійність </span>
-
-					<!-- <span class="text">За 14 років на ринку меблів для дому ми стали
-						надійними партнерами на ринку Вінницької області та України </span> -->
-				</li>
-				<li class="item"> <img src="./images/advantages3.jpg" alt="delivery" width="586px">
-					<span class="text">Безкоштовна доставка </span>
-				</li>
-
-
-
-			</ul>
+		<section class="advantages section container">
+			<h2 class="title">
+				<span class="title-wrapper">
+					<span class="pre-title">Наші переваги</span> </span>
+			</h2>
+			<div>
+				<div class=" advantages-list slider">
+					<div class="slider_item advantages-wrapper">
+						<img src="./images/advantages1.jpg" width="586" height="350" alt="" srcset="" />
+						<div class="wrapper-text">
+							<p class="advantages-title ">Меблі преміум класу </p>
+							<p class=" advantages-text">За 14 років на ринку меблів
+								для дому ми стали
+								надійними <br> партнерами на ринку Вінницької області та України </p>
+						</div>
+					</div>
+					<div class="slider_item advantages-wrapper">
+						<img src="./images/advantages2.jpg" width="586" height="350" alt="" srcset="" />
+						<div class="wrapper-text">
+							<p class="advantages-title position">Надійність </p>
+							<p class=" advantages-text">За 14 років на ринку меблів
+								для дому ми стали
+								надійними <br> партнерами на ринку Вінницької області та України </p>
+						</div>
+					</div>
+					<div class="slider_item advantages-wrapper">
+						<img src="./images/advantages3.jpg" width="586" height="350" alt="" srcset="" />
+						<div class="wrapper-text">
+							<p class="advantages-title position">Безкоштовна доставка </p>
+							<p class=" advantages-text">За 14 років на ринку меблів
+								для дому ми стали
+								надійними <br> партнерами на ринку Вінницької області та України </p>
+						</div>
+					</div>
+					<div class="slider_item advantages-wrapper">
+						<img src="./images/advantages1.jpg" width="586" height="350" alt="" srcset="" />
+						<div class="wrapper-text">
+							<p class="advantages-title ">Меблі преміум класу </p>
+							<p class=" advantages-text">За 14 років на ринку меблів
+								для дому ми стали
+								надійними <br> партнерами на ринку Вінницької області та України </p>
+						</div>
+					</div>
+					<div class="slider_item advantages-wrapper">
+						<img src="./images/advantages2.jpg" width="586" height="350" alt="" srcset="" />
+						<div class="wrapper-text">
+							<p class="advantages-title position">Надійність </p>
+							<p class=" advantages-text">За 14 років на ринку меблів
+								для дому ми стали
+								надійними <br> партнерами на ринку Вінницької області та України </p>
+						</div>
+					</div>
+					<div class="slider_item advantages-wrapper">
+						<img src="./images/advantages3.jpg" width="586" height="350" alt="" srcset="" />
+						<div class="wrapper-text">
+							<p class="advantages-title position">Безкоштовна доставка </p>
+							<p class=" advantages-text">За 14 років на ринку меблів
+								для дому ми стали
+								надійними <br> партнерами на ринку Вінницької області та України </p>
+						</div>
+					</div>
+				</div>
 		</section>
-		<section class="products">
-			<h2 class="title"> Категорії товарів</h2>
-			<ul class="product-set">
-				<li class="item">
 
-					<svg class="product-icon" width="586
-					px">
+		<section class="products section container">
+			<h2 class="title">
+				<span class="title-wrapper">
+					<span class="pre-title">Категорії товарів</span> </span>
+			</h2>
+			<ul class="product-set">
+				<li class="item"> <svg class="product-icon">
 						<use href="./images/sprite.svg#sofa"></use>
 					</svg>
 					<p class="product-text">дивани</p>
 				</li>
-				<li class="item"> <svg class="product-icon" width="586
-					px">
+				<li class="item"> <svg class="product-icon">
 						<use href="./images/sprite.svg#bed"></use>
 					</svg>
-					<p class="product-text">ліжка</p>
+					<p class="product-text curr">ліжка</p>
 				</li>
-				<li class="item"><svg class="product-icon" width="586
-					px">
+				<li class="item"><svg class="product-icon">
 						<use href="./images/sprite.svg#chair"></use>
 					</svg>
 					<p class="product-text">крісла</p>
 				</li>
-				<li class="item"><svg class="product-icon" width="586
-					px">
+				<li class="item"><svg class="product-icon">
 						<use href="./images/sprite.svg#commode"></use>
 					</svg>
 					<p class="product-text">комоди</p>
 				</li>
-				<li class="item"><svg class="product-icon" width="586
-					px">
+				<li class="item"><svg class="product-icon">
 						<use href="./images/sprite.svg#wardrobe"></use>
 					</svg>
 					<p class="product-text">шафи</p>
 				</li>
-				<li class="item"><svg class="product-icon" width="586
-					px">
+				<li class="item"><svg class="product-icon">
 						<use href="./images/sprite.svg#kitchen"></use>
 					</svg>
 					<p class="product-text">кухня</p>
 				</li>
 			</ul>
-		</section>
-		<section class="">
 			<ul class="gallery">
-				<li class="card"><img src="./images/bed1.jpg" alt="" with="586px">
-					<p class="name"></p>
-					<p class="price"></p>
-					<p class="new"></p>
-					<p class="sale"></p>
-					<p class="action"></p>
+				<li class="card">
+					<div class="card-wrapper">
+						<img src="./images/bed1.jpg" alt="" with="586px">
+						<div class="card-description">
+							<p class="name">Ліжко Рамона</p>
+							<p class="price">8 999 грн</p>
+						</div>
+						<p class="new">Новинка</p>
+					</div>
 				</li>
-				<li class="card"><img src="./images/bed2.jpg" alt="" with="586px">
-					<p class="name"></p>
-					<p class="price"></p>
-					<p class="new"></p>
-					<p class="sale"></p>
-					<p class="action"></p>
+				<li class="card">
+					<div class="card-wrapper">
+						<img src="./images/bed2.jpg" alt="" with="586px">
+						<div class="card-description">
+							<p class="name">Ліжко Честер</p>
+							<p class="price new-price">8 999 грн <span class="old-price">8 999 грн</span></p>
+						</div>
+						<p class="sale">ХІт продаж</p>
+						<p class="action">Акція</p>
+					</div>
 				</li>
-				<li class="card"><img src="./images/bed3.jpg" alt="" with="586px">
-					<p class="name"></p>
-					<p class="price"></p>
-					<p class="new"></p>
-					<p class="sale"></p>
-					<p class="action"></p>
+				<li class="card">
+					<div class="card-wrapper"><img src="./images/bed3.jpg" alt="" with="586px">
+						<div class="card-description">
+							<p class="name">Ліжко Венеція люкс</p>
+							<p class="price">8 999 грн</p>
+						</div>
+					</div>
 				</li>
-				<li class="card"><img src="./images/bed4.jpg" alt="" with="586px">
-					<p class="name"></p>
-					<p class="price"></p>
-					<p class="new"></p>
-					<p class="sale"></p>
-					<p class="action"></p>
+				<li class="card">
+					<div class="card-wrapper"><img src="./images/bed4.jpg" alt="" with="586px">
+						<div class="card-description">
+							<p class="name">Ліжко Імперія</p>
+							<p class="price">8 999 грн</p>
+						</div>
+						<p class="new">Новинка</p>
+					</div>
 				</li>
-				<li class="card"><img src="./images/bed5.jpg" alt="" with="586px">
-					<p class="name"></p>
-					<p class="price"></p>
-					<p class="new"></p>
-					<p class="sale"></p>
-					<p class="action"></p>
+				<li class="card">
+					<div class="card-wrapper"><img src="./images/bed5.jpg" alt="" with="586px">
+						<div class="card-description">
+							<p class="name">Ліжко Адель</p>
+							<p class="price">8 999 грн</p>
+						</div>
+					</div>
 				</li>
-				<li class="card"><img src="./images/bed6.jpg" alt="" with="586px">
-					<p class="name"></p>
-					<p class="price"></p>
-					<p class="new"></p>
-					<p class="sale"></p>
-					<p class="action"></p>
+				<li class="card">
+					<div class="card-wrapper"><img src="./images/bed6.jpg" alt="" with="586px">
+						<div class="card-description">
+							<p class="name">Ліжко Атлант</p>
+							<p class="price new-price">8 999 грн <span class="old-price">8 999 грн</span></p>
+							<p class="sale">ХІт продаж</p>
+							<p class="action">Акція</p>
+						</div>
 				</li>
 			</ul>
-			<button class="">В каталог</button>
+			<button class="btn">В каталог</button>
 		</section>
-		<section class="about-us">
-			<h2 class="title">Про нас</h2>
-			<div class="form-about-us">
-				<p class="about-us-text"><span class="accent">
-						"Furniture"</span> – "Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-					enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-					nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-					mollit anim id est laborum."</p>
-				<p class="about-us-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-					voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-				<p class="about-us-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
 
-
+		<section class="about-us section ">
+			<h2 class="title">
+				<span class="title-wrapper">
+					<span class="pre-title">Про нас</span> </span>
+			</h2>
+			<div class="aboutUs-wrapper">
+				<img src="./images/about-us.jpg" alt="">
+				<div class="form-about-us">
+					<p class="about-us-text"><span class="accent">
+							"Furniture"</span> – "Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut
+						enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+						fugiat
+						nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+						deserunt
+						mollit anim id est laborum."</p>
+					<p class="about-us-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+						ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+						in
+						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+						non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					<p class="about-us-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+						ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+				</div>
 			</div>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
 		</section>
-		<section class="qa">
-			<h2 class="title">Залишились питання?</h2>
-			<form action="" class="form">
-				<h3 class="form-title">Замовте консультацію</h3>
 
-
-				<input type="text" name="name" class="form-input" placeholder="Віталій">
-
-
-
-				<input type="text" name="tel" class="form-input second" placeholder="Номер телефону">
-
-				<button type="submit" class="btn">Відправити</button>
-
-				<p class="form-text">Залиште заявку або телефонуйте за номером <span>(099) 111 22 33</span>, і наш
-					менеджер звяжеться з вами для кваліфікованої консультації.</p>
-
-			</form>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+		<section class="qa section">
+			<h2 class="title">
+				<span class="title-wrapper">
+					<span class="pre-title">Залишились питання?</span> </span>
+			</h2>
+			<div class="qa-wrapper">
+				<img src="./images/QA.jpg" alt="">
+				<form action="" class="form">
+					<h3 class="form-title">Замовте консультацію</h3>
+					<input type="text" name="name" class="form-input" placeholder="Віталій">
+					<input type="text" name="tel" class="form-input second" placeholder="Номер телефону">
+					<button type="submit" class="btn">Відправити</button>
+					<p class="form-text">Залиште заявку або телефонуйте за номером <span>(099) 111 22 33</span>, і наш
+						менеджер звяжеться з вами для кваліфікованої консультації.</p>
+				</form>
+			</div>
 		</section>
 	</main>
+
 	<footer>
-		<div class="logo"><svg class="social-icon" width="40px" height="40px">
-				<use href="./images/sprite.svg#logo"></use>
-			</svg>
-			<p>Furniture.test</p>
-		</div>
-		<ul class="menu">
-			<li class="item">дивани</li>
-			<li class="item">ліжка</li>
-			<li class="item">крісла</li>
-			<li class="item">комоди</li>
-			<li class="item">шафи</li>
-			<li class="item">кухня</li>
-		</ul>
-		<ul class="nav">
-			<li class="item">головна</li>
-			<li class="item">акції</li>
-			<li class="item">ОПЛАТА ТА ДОСТАВКА</li>
-			<li class="item">ПРО НАС</li>
-			<li class="item">КОНТАКТИ</li>
-		</ul>
-
-		</ul>
-		<a href="tel:(099) 111 22 33"><svg class="phone-icon" width="40px" height="40px">
-				<use href="./images/sprite.svg#smartphone1"></use>
-			</svg>(099) 111 22 33</a>
-
-
-		<a href="tel:(099) 222 33 44">(099) 222 33 44</a>
-
-		<p>Ми в соціальних мережах:</p>
-		<ul class="social-links">
-			<li> <a href="" aria-label="telegram-icon">
-					<svg class="social-icon" width="40px" height="40px">
-						<use href="./images/sprite.svg#telegram"></use>
+		<div class="footer">
+			<div class="arrow">
+				<a href="./index.html"> <svg class="arrow-icon" width="40px" height="30px">
+						<use href="./images/sprite.svg#arrow"></use>
+					</svg></a>
+			</div>
+			<div class="footer-inform">
+				<div class=" footer-logo logo"><svg class="logo-icon" width="125px" height="75px">
+						<use href="./images/sprite.svg#logo"></use>
 					</svg>
-				</a>
-
-			</li>
-			<li> <a href="./images/Facebook.svg" aria-label="facebook-icon"><svg class="social-icon" width="40px"
-						height="40px">
-						<use href="./images/sprite.svg#facebook"></use>
-					</svg></a>
-			</li>
-			<li> <a href="./images/Instagram.svg" aria-label="instagram-icon"><svg class="social-icon" width="40px"
-						height="40px">
-						<use href="./images/sprite.svg#instagram"></use>
-					</svg></a>
-			</li>
-			<p class="">&copy; ТОВ Furniture, працюємо з 2006 року</p>
-			<svg class="social-icon" width="40px" height="40px">
-				<use href="./images/sprite.svg#logo-glianets"></use>
-			</svg>
-			<p class="glianets"> Глянець — розробка інтернет-магазинів</p>
-			<p class="glianets"> Глянець — розробка інтернет-магазинів</p>
+					<h1><span class="accent">F</span>urniture.test
+					</h1>
+				</div>
+				<div class="footer-page-nav">
+					<ul class="footer-menu">
+						<li class="item">дивани </li>
+						<li class="item">ліжка </li>
+						<li class="item">крісла </li>
+						<li class="item">комоди </li>
+						<li class="item">шафи </li>
+						<li class="item">кухня </li>
+					</ul>
+					<ul class="footer-nav">
+						<li class="item">акції</li>
+						<li class="item">оплата та доставка</li>
+						<li class="item">про нас</li>
+						<li class="item">контакти</li>
+					</ul>
+					<div class="111">
+						<ul class="information">
+							<li class="adress">
+								<svg class="" width="24px" height="24px">
+									<use href="./images/sprite.svg#map"></use>
+								</svg>
+								<a class="" href="">TEST</a>
+							</li>
+							<li class="adress">
+								<svg class="" width="24px" height="24px">
+									<use href="./images/sprite.svg#calendar"></use>
+								</svg>
+								<span>Пн-Пт, з 10 до 18</span>
+							</li>
+							<li class="telNumber">
+								<svg class="phone-icon" width="24px" height="24px">
+									<use href="./images/sprite.svg#smartphone-2"></use>
+								</svg>
+								<a href="tel:(099) 111 22 33">(099) 111 22 33</a>
+							</li>
+							<li class="telNumber secondnumb">
+								<a href="tel:(099) 222 33 44">(099) 222 33 44</a>
+							</li>
+						</ul>
+						<div class="links">
+							<p>Ми в соціальних мережах:</p>
+							<ul class="social-links">
+								<li class="item"> <a href="" aria-label="telegram-icon">
+										<svg class="social-icon" width="22px" height="18px">
+											<use href="./images/sprite.svg#telegram"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="item"> <a href="./images/Facebook.svg" aria-label="facebook-icon"><svg
+											class="social-icon" width="10px" height="22px">
+											<use href="./images/sprite.svg#facebook"></use>
+										</svg></a>
+								</li>
+								<li class="item"> <a href="./images/Instagram.svg" aria-label="instagram-icon"><svg
+											class="social-icon" width="20px" height="20px">
+											<use href="./images/sprite.svg#instagram"></use>
+										</svg></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<p class="right">&copy; ТОВ Furniture, працюємо з 2006 року</p>
+					<div class="glianets-wrapper">
+						<svg class="" width="20px" height="20px">
+							<use href="./images/sprite.svg#logo-glianets"></use>
+						</svg>
+						<span class="glianets"> Глянець — розробка інтернет-магазинів</span>
+					</div>
+				</div>
+			</div>
+			<div class="footer-img">
+				<img src="./images/footer.jpg" alt="">
+			</div>
+		</div>
 	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/index.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+		integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+		crossorigin="anonymous"></script>
+	<script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
