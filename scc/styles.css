@@ -766,7 +766,7 @@ h1 {
 	}
 
 	.card {
-		width: 400px;
+		/* width: 400px; */
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -1041,6 +1041,8 @@ footer {
 
 .footer-img img {
 	display: none;
+
+	
 }
 
 .arrow {
@@ -1238,8 +1240,7 @@ footer {
 	}
 
 }
-
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
 	.footer {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -1252,6 +1253,7 @@ footer {
 	}
 
 }
+
 
 @media (min-width: 1550px) {
 	.links {
